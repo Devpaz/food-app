@@ -18,11 +18,34 @@
         </div>
       </div>
     </div> 
+    <div class="scroll-menu">
+      <div class="scroll-content">
+        <div :key="index" class="avatar" v-for="(item,index) in 10">
+          <i class='bx bx-beer bx-sm'></i> 
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <style lang="less">
   .home {
     margin: 20px;
+    .scroll-menu {
+      margin-top: 10px ;
+      .scroll-content {
+        display: flex;
+        overflow-y: auto;
+        .avatar {
+          background-color: rgb(250, 248, 248) ;
+          padding: 20px;
+          border-radius: 10px;
+          margin: 10px;
+          i {
+            color: rgba(255, 131, 62);
+          }
+        }
+      }
+    }
   }
   .title {
     font-weight: 350;
