@@ -42,10 +42,11 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 * {
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Josefin+Sans:ital,wght@1,300&display=swap');
+  font-family: 'Josefin Sans', sans-serif;
   margin: 0px;
   padding: 0px;
 }
