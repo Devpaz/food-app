@@ -25,11 +25,67 @@
         </div>
       </div>
     </div>
+    <h2>Top Products</h2>
+    <div class="scroll-menu">
+      <div class="scroll-content">
+        <div :key="index" v-for="(item, index) in 10" class="top-products">
+          <div class="top-products-img">
+            <img src="https://images.unsplash.com/photo-1607547023949-e07be8732b3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGp1aWNlJTIwb3JhbmNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60" alt="">
+          </div>
+
+
+          <div class="top-products-text">
+            <div class="top-products-title">Berry Juice</div>
+            <div class="top-products-price">$ 7.5</div>
+          </div>
+          <i class='bx bx-plus-medical'></i>
+
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <style lang="less">
+  h2 {
+    margin-top: 15px;
+    font-weight: 400;
+
+  }
   .home {
     margin: 20px;
+    .top-products {
+      position: relative;
+      min-width: 150px;
+      background-color: rgba(250, 248, 248);
+      padding: 10px;
+      border-radius: 10px;
+      .card-footer {
+        display: flex;
+      }
+      i {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 10px;
+        color: white;
+        border-radius: 50px;
+        background-color: rgba(74, 174, 84);
+        margin: 5px;
+      }
+      .top-products-img {
+        img {
+          width: 100%;
+        }
+      }
+      .top-products-text {
+        .top-products-title {
+          color: rgba(47, 47, 47)
+        }
+        .top-products-price {
+          color: rgba(255, 131, 62);
+        }
+      }
+    }
     .scroll-menu {
       margin-top: 10px ;
       .scroll-content {
